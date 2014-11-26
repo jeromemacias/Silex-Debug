@@ -1,0 +1,26 @@
+{
+    "name": "jeromemacias/silex-debug",
+    "description": "An integration of the Symfony var dumper for Silex",
+    "homepage": "http://silex.sensiolabs.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jérôme Macias",
+            "email": "jerome.macias@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "2.0.*@dev",
+        "symfony/debug-bundle": "~2.6"
+    },
+    "autoload": {
+        "psr-4": { 
+            "Silex\\Provider\\": "" 
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
