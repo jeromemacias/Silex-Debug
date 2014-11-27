@@ -78,12 +78,7 @@ class DebugServiceProvider implements ServiceProviderInterface, BootableProvider
         // 'kernel.request' event
         VarDumper::setHandler(function ($var) use ($app) {
             $dumper = new CliDumper();
-            $cloner = $app['var_dumper.cloner'];
-            $handler = function ($var) use ($dumper, $cloner) {
-                $dumper->dump($cloner->cloneVar($var));
-            };
-            VarDumper::setHandler($handler);
-            $handler($var);
+            $dumper->dump($app['var_dumper.cloner']->cloneVar($var));
         });
     }
 
