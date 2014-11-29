@@ -5,15 +5,12 @@ The Silex Debug service provider allows you to use the wonderful Symfony
 var dumper component in your Silex application.
 This provider also provide an integration with the Symfony web profiler toolbar and Twig.
 
-**Meanwhile the stable release of Symfony 2.6, you need to force `symfony/http-kernel` 
-dependency version to `2.6.*@dev` in your `composer.json`.**
-
 To install this library, run the command below and you will get the latest
 version:
 
 .. code-block:: bash
 
-    composer require silex/debug ~2.0@dev
+    composer require jeromemacias/silex-debug ~2.0@dev
 
 And enable it in your application:
 
