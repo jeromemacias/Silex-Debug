@@ -2,8 +2,8 @@ Silex Debug
 ===========
 
 The Silex Debug service provider allows you to use the wonderful Symfony
-var dumper component in your Silex application.
-This provider also provide an integration with the Symfony web profiler toolbar and Twig.
+[VarDumper](http://symfony.com/doc/master/components/var_dumper/introduction.html) component in your Silex application.
+It provide an integration with the Symfony web profiler toolbar and Twig.
 
 To install this library, run the command below and you will get the latest
 version:
