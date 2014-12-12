@@ -10,17 +10,17 @@
         }
     ],
     "require": {
-        "silex/silex": "2.0.*@dev",
+        "silex/silex": "~1.0@dev",
         "symfony/debug-bundle": "~2.6"
     },
     "autoload": {
-        "psr-4": { 
+        "psr-4": {
             "Silex\\Provider\\": "" 
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "1.0.x-dev"
         }
     }
 }

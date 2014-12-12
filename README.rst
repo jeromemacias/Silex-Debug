@@ -10,7 +10,7 @@ version:
 
 .. code-block:: bash
 
-    composer require jeromemacias/silex-debug ~2.0@dev
+    composer require jeromemacias/silex-debug ~1.0@dev
 
 And enable it in your application:
 
