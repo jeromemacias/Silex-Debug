@@ -2,7 +2,6 @@
 
 namespace Silex\Provider;
 
-use Silex\Api\BootableProviderInterface;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 use Symfony\Bridge\Twig\Extension\DumpExtension;
@@ -13,7 +12,7 @@ use Symfony\Component\VarDumper\Cloner\VarCloner;
 use Symfony\Component\VarDumper\Dumper\CliDumper;
 use Symfony\Component\VarDumper\VarDumper;
 
-class DebugServiceProvider implements ServiceProviderInterface, BootableProviderInterface
+class DebugServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {
