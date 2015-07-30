@@ -33,10 +33,10 @@ class DebugServiceProvider implements ServiceProviderInterface, BootableProvider
             return $cloner;
         };
 
-        $app['data_collector.templates'] = array_merge(
-            $app['data_collector.templates'],
-            array(array('dump', '@Debug/Profiler/dump.html.twig'))
-        );
+        $app['data_collector.templates'] = $app->extend('data_collector.templates', function ($templates) {
+            $templates[] = array('dump', '@Debug/Profiler/dump.html.twig');
+            return $templates;
+        });
 
         $app['data_collector.dump'] = function ($app) {
             return new DumpDataCollector($app['stopwatch'], $app['code.file_link_format']);
