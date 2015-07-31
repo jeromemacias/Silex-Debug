@@ -65,9 +65,9 @@ class DebugServiceProvider implements ServiceProviderInterface, BootableProvider
         });
 
         $app['debug.templates_path'] = function () {
-            $r = new \ReflectionClass('Symfony\Bundle\DebugBundle\DependencyInjection\Configuration');
+            $r = new \ReflectionClass('Symfony\Bundle\DebugBundle\DebugBundle');
 
-            return dirname(dirname($r->getFileName())).'/Resources/views';
+            return dirname($r->getFileName()).'/Resources/views';
         };
     }
 
